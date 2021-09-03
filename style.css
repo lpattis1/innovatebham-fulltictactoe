@@ -1,0 +1,98 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.7;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:focus {
+  outline-width: 0;
+}
+
+/* ------------------------------- */
+
+/* game board */
+
+.board {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.announce-turn {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transition: 0.3s opacity ease-in-out;
+}
+
+.draw {
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+  background: red;
+  transition: 0.3s ease-in-out;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30.2rem;
+  margin: auto;
+}
+
+.row .square {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.top {
+  border-bottom: 0.1rem solid black;
+}
+
+.left {
+  border-right: 0.1rem solid black;
+}
+
+.bottom {
+  border-top: 0.1rem solid black;
+}
+
+.right {
+  border-left: 0.1rem solid black;
+}
+
+/* ------------------------ */
+
+/* Dynamic Classes */
+
+.show-turn {
+  opacity: 1;
+}
